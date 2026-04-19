@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="8hU79oq6YgMoS89Z0TojYxpa1ykzSJdx9Nhxw50H17I" />
+<meta name="description" content="大阪の高級個人タクシー「マハロタクシー」。アルファード エグゼクティブラウンジで関西空港送迎・観光貸切・ホテル送迎を承ります。WhatsApp・LINE対応で外国人のお客様も安心。Osaka private taxi, airport transfer, chartered taxi service." />
+<meta name="keywords" content="大阪タクシー,大阪個人タクシー,大阪アルファード,大阪観光タクシー,大阪貸切タクシー,関西空港送迎,大阪空港送迎,マハロタクシー,高級タクシー大阪,大阪ハイヤー,アルファードタクシー,アルファード,大型タクシー,マハロ358,マハロタクシー,桃谷タクシー,天王寺区タクシー,Osaka taxi,Osaka private taxi,Osaka airport transfer,Kansai airport transfer,Osaka chartered taxi,Japan taxi English,大阪 外国人 タクシー" />
+<meta property="og:title" content="MAHALO TAXI | 大阪の高級個人タクシー" />
+<meta property="og:description" content="アルファード エグゼクティブラウンジで大阪・京都・関西エリアを快適に。関西空港送迎・観光貸切・ホテル送迎。WhatsApp・LINE対応。" />
+<meta property="og:url" content="https://www.mahalotaxi358.com" />
+<meta property="og:type" content="website" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAHALO TAXI | 感謝を、走らせる</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  :root{
+    --gold:#B8963E;
+    --gold-light:#D4C5A0;
+    --dark:#1B3A2D;
+    --cream:#F9F7F4;
+    --ivory:#F2EDE5;
+    --text:#1a1a1a;
+    --muted:#888;
+  }
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:'Hiragino Mincho ProN','Yu Mincho','Georgia',serif;
+    background:var(--cream);
+    color:var(--text);
+  }
+
+
+  /* ===== LANGUAGE BAR ===== */
+  .lang-bar{
+    background:#F2EDE5;
+    border-bottom:0.5px solid #e0d8cc;
+    padding:6px 8%;
+    display:flex;
+    justify-content:flex-end;
+    gap:8px;
+    align-items:center;
+  }
+  .lang-btn{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:11px;
+    letter-spacing:1px;
+    color:#888;
+    background:none;
+    border:0.5px solid #ddd;
+    padding:4px 10px;
+    cursor:pointer;
+    border-radius:3px;
+    transition:all .2s;
+  }
+  .lang-btn:hover,.lang-btn.active{
+    background:#1B3A2D;
+    color:#F5EDD6;
+    border-color:#1B3A2D;
+  }
+  .lang-btn.active{color:#B8963E;}
+
+  /* ===== NAV ===== */
+  nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.8rem 8%;
+    border-bottom:0.5px solid #e0d8cc;
+    background:var(--cream);
+    position:sticky;
+    top:0;
+    z-index:100;
+  }
+  .nav-logo{
+    font-family:'Hiragino Sans','Yu Gothic',sans-serif;
+    font-size:14px;
+    letter-spacing:5px;
+    font-weight:400;
+    color:var(--text);
+    line-height:1;
+  }
+  .nav-logo span{
+    display:block;
+    font-size:8px;
+    letter-spacing:3px;
+    color:var(--gold);
+    margin-top:4px;
+  }
+  .nav-links a{
+    margin-left:2.5rem;
+    text-decoration:none;
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--muted);
+    transition:color .3s;
+  }
+  .nav-links a:hover{color:var(--gold);}
+
+  /* ===== HERO ===== */
+  .hero{
+    padding:8rem 8% 7rem;
+    text-align:center;
+  }
+  .hero-en{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:10px;
+    letter-spacing:6px;
+    color:var(--gold);
+    margin-bottom:3rem;
+  }
+  .hero h1{
+    font-size:44px;
+    font-weight:300;
+    letter-spacing:12px;
+    color:var(--text);
+    line-height:1.6;
+    margin-bottom:1.8rem;
+  }
+  .hero-sub{
+    font-size:14px;
+    letter-spacing:5px;
+    color:var(--muted);
+    font-weight:300;
+  }
+  .gold-line{
+    width:40px;
+    height:1px;
+    background:var(--gold);
+    margin:3.5rem auto;
+  }
+
+  /* ===== ABOUT ===== */
+  .about{
+    padding:5rem 8%;
+    max-width:700px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .sec-label{
+    display:block;
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:9px;
+    letter-spacing:6px;
+    color:var(--gold);
+    margin-bottom:3rem;
+  }
+  .about p{
+    font-size:14px;
+    line-height:3;
+    color:#555;
+    font-weight:300;
+    letter-spacing:1.5px;
+  }
+
+  /* ===== SERVICE (dark) ===== */
+  .service{
+    background:var(--dark);
+    padding:6rem 8%;
+  }
+  .service .sec-label{
+    text-align:center;
+    margin-bottom:4rem;
+  }
+  .svc-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:3rem;
+    max-width:720px;
+    margin:0 auto;
+  }
+  .svc-item{text-align:center;}
+  .svc-item h3{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:11px;
+    letter-spacing:4px;
+    color:var(--gold);
+    margin-bottom:1.5rem;
+    font-weight:400;
+  }
+  .svc-item p{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:12px;
+    line-height:2.4;
+    color:rgba(255,255,255,0.45);
+    font-weight:300;
+  }
+  .svc-divider{
+    width:1px;
+    background:rgba(184,150,62,0.2);
+    margin:0 auto;
+  }
+
+  /* ===== VEHICLE ===== */
+  .vehicle{
+    padding:6rem 8%;
+    text-align:center;
+  }
+  .veh-card{
+    max-width:460px;
+    margin:4rem auto 0;
+    padding:3.5rem 2.5rem;
+    border:0.5px solid var(--gold-light);
+    background:#FDFBF8;
+  }
+  .veh-card h3{
+    font-size:22px;
+    letter-spacing:6px;
+    font-weight:300;
+    color:var(--text);
+    margin-bottom:0.6rem;
+  }
+  .veh-grade{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:9px;
+    letter-spacing:4px;
+    color:var(--gold);
+    margin-bottom:2rem;
+  }
+  .veh-card .gold-line{margin:0 auto 2.5rem;}
+  .veh-card p{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:12px;
+    line-height:2.8;
+    color:#777;
+    font-weight:300;
+  }
+
+  .veh-photos{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+    margin:0 0 0.5rem;
+  }
+  .veh-photo-wrap{text-align:center;}
+  .veh-photo{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    border:0.5px solid var(--gold-light);
+  }
+  .veh-photo-label{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:9px;
+    letter-spacing:3px;
+    color:var(--gold);
+    margin-top:0.6rem;
+  }
+
+  /* ===== VOICES ===== */
+  .voices{
+    padding:6rem 8%;
+    background:var(--cream);
+  }
+  .voices .sec-label{text-align:center;margin-bottom:4rem;}
+  .voices-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:2rem;
+    max-width:900px;
+    margin:0 auto;
+  }
+  .voice-card{
+    background:#fff;
+    border:0.5px solid var(--gold-light);
+    padding:2rem 1.8rem;
+  }
+  .voice-text{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:13px;
+    line-height:2.4;
+    color:#555;
+    font-weight:300;
+    font-style:italic;
+    margin-bottom:1.5rem;
+  }
+  .voice-from{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:10px;
+    letter-spacing:3px;
+    color:var(--gold);
+  }
+
+  /* ===== CONTACT ===== */
+  .contact{
+    padding:6rem 8%;
+    background:var(--ivory);
+    text-align:center;
+  }
+  .contact-inner{max-width:480px;margin:0 auto;}
+  .contact-note{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:12px;
+    letter-spacing:2px;
+    color:var(--muted);
+    margin-top:0.5rem;
+  }
+  .tel{
+    font-size:34px;
+    letter-spacing:4px;
+    color:var(--text);
+    margin:2.5rem 0 0.8rem;
+    font-weight:300;
+  }
+  .tel a{
+    text-decoration:none;
+    color:inherit;
+  }
+  .tel-time{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:11px;
+    letter-spacing:3px;
+    color:#aaa;
+  }
+
+  /* ===== FOOTER ===== */
+  footer{
+    background:#F2EDE5;
+    color:#1B3A2D;
+    text-align:center;
+    padding:2.5rem 8%;
+  }
+  footer p{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:10px;
+    letter-spacing:3px;
+    color:#1B3A2D;
+    opacity:0.6;
+  }
+
+  /* ===== INTERNATIONAL ===== */
+  .intl{
+    padding:6rem 8%;
+    background:var(--dark);
+    text-align:center;
+  }
+  .intl-inner{max-width:600px;margin:0 auto;}
+  .intl .sec-label{color:var(--gold);}
+  .intl-title{
+    font-size:22px;
+    font-weight:300;
+    letter-spacing:4px;
+    color:#F5EDD6;
+    line-height:1.8;
+    margin-bottom:0;
+  }
+  .intl-text{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:13px;
+    line-height:2.8;
+    color:rgba(255,255,255,0.5);
+    font-weight:300;
+  }
+  .intl-badges{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin-top:2.5rem;
+    flex-wrap:wrap;
+  }
+  .badge{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:11px;
+    letter-spacing:2px;
+    color:var(--gold);
+    border:0.5px solid rgba(184,150,62,0.5);
+    padding:0.5rem 1.4rem;
+  }
+
+  .res-methods{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin:2rem 0 1rem;
+    flex-wrap:wrap;
+  }
+  .res-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:12px;
+    letter-spacing:2px;
+    color:#25D366;
+    border:0.5px solid #25D366;
+    padding:0.8rem 2rem;
+    transition:background .3s, color .3s;
+  }
+  .res-btn:hover{background:#25D366;color:#fff;}
+  .line-btn{color:#06C755;border-color:#06C755;}
+  .line-btn:hover{background:#06C755;color:#fff;}
+  .res-icon{display:flex;align-items:center;}
+  .res-note{
+    font-family:'Hiragino Sans',sans-serif;
+    font-size:10px;
+    letter-spacing:2px;
+    color:#aaa;
+    margin-top:0.5rem;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media(max-width:640px){
+    .hero h1{font-size:30px;letter-spacing:8px;}
+    .nav-links{display:none;}
+    .svc-grid{gap:2rem;}
+    .tel{font-size:26px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<div class="lang-bar">
+  <button class="lang-btn active" data-lang="ja" onclick="setLang('ja')">日本語</button>
+  <button class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+  <button class="lang-btn" data-lang="zh" onclick="setLang('zh')">中文</button>
+  <button class="lang-btn" data-lang="ko" onclick="setLang('ko')">한국어</button>
+  <button class="lang-btn" data-lang="ar" onclick="setLang('ar')">العربية</button>
+</div>
+
+<nav>
+  <div class="nav-logo"><img src="logo_nav.png" alt="MAHALO TAXI" style="height:52px;width:auto;"></div>
+  <div class="nav-links">
+    <a href="#service">サービス</a>
+    <a href="airport.html">空港送迎</a>
+    <a href="charter.html">観光貸切</a>
+    <a href="golf.html">ゴルフ送迎</a>
+    <a href="#contact">ご予約</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  
+  <h1>感謝を、<br>走らせる</h1>
+  <p class="hero-sub" id="catch-sub">「ありがとう」を乗せて</p>
+  <div class="gold-line"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <span class="sec-label" id="about-label">ABOUT</span>
+  
+  <p>上質な移動を、心を込めてお届けします。</p>
+</section>
+
+<!-- INTERNATIONAL -->
+<section class="intl">
+  <div class="intl-inner">
+    <span class="sec-label" id="global-label">GLOBAL SERVICE</span>
+    <h2 class="intl-title" id="global-title">海外のお客様も<br>安心してご利用いただけます</h2>
+    <div class="gold-line" style="margin:2.5rem auto;"></div>
+    <p class="intl-text" id="global-text">
+      ホテルからのご依頼を多くいただいており、<br>
+      海外からのお客様のご対応実績も豊富です。<br><br>
+      WhatsApp・各種通訳アプリを活用し、<br>
+      言葉の壁を感じさせないサービスをご提供します。
+    </p>
+    <div class="intl-badges">
+      <span class="badge">WhatsApp</span>
+      <span class="badge">多言語対応</span>
+      <span class="badge">ホテル連携</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE -->
+<section class="service" id="service">
+  <span class="sec-label" id="service-label">SERVICE</span>
+  <div class="svc-grid">
+    <div class="svc-item">
+      <h3 id="svc1-title">空港送迎</h3>
+      <p id="svc1-text">関西国際空港<br>伊丹空港対応<br>各ホテル規定料金</p>
+    </div>
+    <div class="svc-item">
+      <h3 id="svc2-title">観光貸切</h3>
+      <p id="svc2-text">大阪・京都・神戸<br>観光ルートご提案<br>半日・一日プラン</p>
+    </div>
+    <div class="svc-item">
+      <h3 id="svc3-title">送迎サービス</h3>
+      <p id="svc3-text">ホテル・駅間送迎<br>法人・個人対応<br>事前予約優先</p>
+    </div>
+  </div>
+</section>
+
+<!-- VEHICLE -->
+<section class="vehicle" id="vehicle">
+  <span class="sec-label" id="vehicle-label">VEHICLE</span>
+  <div class="veh-card">
+    <h3>ALPHARD</h3>
+    <div class="veh-grade" id="veh-grade">EXECUTIVE LOUNGE　2026年新型</div>
+    <div class="gold-line"></div>
+    <div class="veh-photos">
+      <div class="veh-photo-wrap">
+        <img src="car_exterior.png" alt="アルファード外装" class="veh-photo">
+        <p class="veh-photo-label">EXTERIOR</p>
+      </div>
+      <div class="veh-photo-wrap">
+        <img src="car_interior.jpg" alt="アルファード内装" class="veh-photo">
+        <p class="veh-photo-label">INTERIOR</p>
+      </div>
+    </div>
+    <p style="margin-top:2rem;">
+      最上級グレードを導入。<br>
+      静粛な車内空間と上質なシートで、<br>
+      移動そのものを特別な時間に。
+    </p>
+  </div>
+</section>
+
+<!-- VOICES -->
+<section class="voices">
+  <span class="sec-label">GUEST VOICES</span>
+  <div class="voices-grid">
+
+    <div class="voice-card">
+      <p class="voice-text">"Thank you so much Mr. Kozo, you are very kind and supportive. It was a pleasure meeting you again. For sure we will see you again in our next trip to Japan."</p>
+      <p class="voice-from">Ahmed様　UAE</p>
+    </div>
+
+    <div class="voice-card">
+      <p class="voice-text">"Thank you very much for driving us safely around Osaka and Kyoto. We look forward to visiting again in the future. All the best!"</p>
+      <p class="voice-from">Laksh様　Singapore</p>
+    </div>
+
+    <div class="voice-card">
+      <p class="voice-text">"Thanks so much for the message, much appreciated. I will keep your details and recommend to my friends who come too."</p>
+      <p class="voice-from">Isma様　Dubai</p>
+    </div>
+
+    <div class="voice-card">
+      <p class="voice-text">"素晴らしいおもてなしを本当にありがとうございました。日本の素晴らしい文化を見事に体現されていました。心より感謝申し上げます。"</p>
+      <p class="voice-from">Mo様　Saudi Arabia</p>
+    </div>
+
+    <div class="voice-card">
+      <p class="voice-text">"Thank you, we had a wonderful time! We appreciate it so much. Have a great new year!"</p>
+      <p class="voice-from">ご家族様　Singapore</p>
+    </div>
+
+    <div class="voice-card">
+      <p class="voice-text">"Thank you for everything! We appreciate it so much."</p>
+      <p class="voice-from">ご家族様　United States</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="sec-label" id="res-label">RESERVATION</span>
+    <p class="contact-note" id="res-note">お気軽にお問い合わせください</p>
+    <p class="tel"><a href="tel:080-8326-1112">080-8326-1112</a></p>
+    <p class="tel-time" id="res-time">受付時間　5:00 — 20:00</p>
+
+    <div class="res-methods">
+      <a href="https://wa.me/818083261112" class="res-btn" target="_blank">
+        <span class="res-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.97L0 24l6.22-1.57A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.22-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.25-1.44l-.38-.22-3.93.99 1.03-3.82-.25-.4A9.94 9.94 0 0 1 2 12C2 6.48 6.48 2 12 2c2.67 0 5.18 1.04 7.07 2.93A9.93 9.93 0 0 1 22 12c0 5.52-4.48 10-10 10zm5.47-7.45c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.66-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.91-2.19-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.09 3.19 5.07 4.47.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z" fill="currentColor"/>
+          </svg>
+        </span>
+        WhatsApp
+      </a>
+      <a href="https://line.me/ti/p/~08083261112" class="res-btn line-btn" target="_blank">
+        <span class="res-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 10.31C24 4.62 18.62 0 12 0S0 4.62 0 10.31c0 5.1 4.52 9.37 10.62 10.18.41.09.98.27 1.12.63.13.32.08.83.04 1.15l-.18 1.09c-.05.32-.25 1.27 1.11.69 1.36-.57 7.35-4.33 10.03-7.41C23.14 14.6 24 12.55 24 10.31z" fill="currentColor"/>
+            <path d="M9.56 8.14H8.44a.3.3 0 0 0-.3.3v3.49a.3.3 0 0 0 .3.3h1.12a.3.3 0 0 0 .3-.3V8.44a.3.3 0 0 0-.3-.3zM15.56 8.14h-1.12a.3.3 0 0 0-.3.3v2.07L12.4 8.27a.3.3 0 0 0-.24-.13h-1.12a.3.3 0 0 0-.3.3v3.49a.3.3 0 0 0 .3.3h1.12a.3.3 0 0 0 .3-.3V9.86l1.75 2.25a.3.3 0 0 0 .24.12h1.12a.3.3 0 0 0 .3-.3V8.44a.3.3 0 0 0-.3-.3z" fill="white"/>
+          </svg>
+        </span>
+        LINE
+      </a>
+    </div>
+    <p class="res-note">海外からのお客様はWhatsAppが便利です</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div style="margin-bottom:1.5rem;">
+    <img src="logo_footer.png" alt="MAHALO TAXI" style="height:100px;width:auto;">
+  </div>
+  <p id="footer-copy">© 2026 MAHALO TAXI　All rights reserved.</p>
+</footer>
+
+
+<script>
+const translations = {
+  ja: {
+    catch: '感謝を、走らせる',
+    sub: '「ありがとう」を乗せて',
+    about_label: 'ABOUT',
+    about_text: '上質な移動を、心を込めてお届けします。',
+    service_label: 'SERVICE',
+    svc1_title: '空港送迎',
+    svc1_text: '関西国際空港<br>伊丹空港対応<br>各ホテル規定料金',
+    svc2_title: '観光貸切',
+    svc2_text: '大阪・京都・神戸<br>観光ルートご提案<br>半日・一日プラン',
+    svc3_title: '送迎サービス',
+    svc3_text: 'ホテル・駅間送迎<br>法人・個人対応<br>事前予約優先',
+    global_label: 'GLOBAL SERVICE',
+    global_title: '海外のお客様も<br>安心してご利用いただけます',
+    global_text: 'ホテルからのご依頼を多くいただいており、<br>海外からのお客様のご対応実績も豊富です。<br><br>WhatsApp・各種通訳アプリを活用し、<br>言葉の壁を感じさせないサービスをご提供します。',
+    vehicle_label: 'VEHICLE',
+    veh_name: 'ALPHARD',
+    veh_grade: 'EXECUTIVE LOUNGE　2026年新型',
+    veh_text: '最上級グレードを導入。<br>静粛な車内空間と上質なシートで、<br>移動そのものを特別な時間に。',
+    res_label: 'RESERVATION',
+    res_note: 'お気軽にお問い合わせください',
+    res_time: '受付時間　5:00 — 20:00',
+    res_sns: 'WhatsApp &amp; LINE',
+    footer: '© 2026 MAHALO TAXI　All rights reserved.'
+  },
+  en: {
+    catch: 'Driving with Gratitude',
+    sub: 'Carrying your "Thank You"',
+    about_label: 'ABOUT',
+    about_text: 'Premium transportation delivered with heartfelt hospitality.',
+    service_label: 'SERVICE',
+    svc1_title: 'Airport Transfer',
+    svc1_text: 'Kansai International Airport<br>Itami Airport<br>Hotel flat rates available',
+    svc2_title: 'Sightseeing Charter',
+    svc2_text: 'Osaka · Kyoto · Kobe<br>Custom tour routes<br>Half-day & full-day plans',
+    svc3_title: 'Hotel Transfer',
+    svc3_text: 'Hotel & station transfers<br>Corporate & private<br>Advance booking preferred',
+    global_label: 'GLOBAL SERVICE',
+    global_title: 'International guests<br>are warmly welcome',
+    global_text: 'We frequently receive requests from hotels<br>and have extensive experience with international guests.<br><br>We use WhatsApp and translation apps<br>to provide seamless multilingual service.',
+    vehicle_label: 'VEHICLE',
+    veh_name: 'ALPHARD',
+    veh_grade: 'EXECUTIVE LOUNGE · 2026 New Model',
+    veh_text: 'The finest grade vehicle.<br>Quiet cabin and premium seating<br>make every journey extraordinary.',
+    res_label: 'RESERVATION',
+    res_note: 'Feel free to contact us',
+    res_time: 'Available 5:00 — 20:00',
+    res_sns: 'WhatsApp &amp; LINE',
+    footer: '© 2026 MAHALO TAXI　All rights reserved.'
+  },
+  zh: {
+    catch: '以感恩之心，驰骋前行',
+    sub: '承载您的「谢谢」',
+    about_label: '关于我们',
+    about_text: '以真诚的款待，提供高品质的出行服务。',
+    service_label: '服务内容',
+    svc1_title: '机场接送',
+    svc1_text: '关西国际机场<br>伊丹机场对应<br>各酒店规定费用',
+    svc2_title: '观光包车',
+    svc2_text: '大阪·京都·神户<br>定制观光路线<br>半日·全日方案',
+    svc3_title: '接送服务',
+    svc3_text: '酒店·车站接送<br>法人·个人对应<br>优先预约制',
+    global_label: '国际服务',
+    global_title: '海外宾客<br>请放心使用',
+    global_text: '我们经常接受酒店委托，<br>拥有丰富的接待海外宾客经验。<br><br>通过WhatsApp和翻译应用，<br>提供无语言障碍的优质服务。',
+    vehicle_label: '车辆介绍',
+    veh_name: 'ALPHARD',
+    veh_grade: '行政贵宾版 · 2026年新款',
+    veh_text: '顶级豪华车型。<br>静谧的车厢空间与高端座椅，<br>让每次出行都成为特别体验。',
+    res_label: '预约咨询',
+    res_note: '欢迎随时联系我们',
+    res_time: '受理时间　5:00 — 20:00',
+    res_sns: 'WhatsApp &amp; LINE',
+    footer: '© 2026 MAHALO TAXI　保留所有权利。'
+  },
+  ko: {
+    catch: '감사를 달립니다',
+    sub: '「감사합니다」를 싣고',
+    about_label: '소개',
+    about_text: '진심을 담아 최고의 이동 서비스를 제공합니다.',
+    service_label: '서비스',
+    svc1_title: '공항 송영',
+    svc1_text: '간사이 국제공항<br>이타미 공항 대응<br>각 호텔 규정 요금',
+    svc2_title: '관광 전세',
+    svc2_text: '오사카·교토·고베<br>맞춤 관광 루트 제안<br>반일·종일 플랜',
+    svc3_title: '송영 서비스',
+    svc3_text: '호텔·역 간 송영<br>법인·개인 대응<br>사전 예약 우선',
+    global_label: '글로벌 서비스',
+    global_title: '해외 고객님도<br>안심하고 이용하세요',
+    global_text: '호텔의 의뢰를 다수 받으며<br>해외 고객 응대 실적이 풍부합니다.<br><br>WhatsApp 및 번역 앱을 활용하여<br>언어 장벽 없는 서비스를 제공합니다.',
+    vehicle_label: '차량 안내',
+    veh_name: 'ALPHARD',
+    veh_grade: '이그제큐티브 라운지 · 2026년 신형',
+    veh_text: '최고급 등급 차량 도입。<br>조용한 실내 공간과 고급 시트로<br>이동 자체를 특별한 시간으로。',
+    res_label: '예약 문의',
+    res_note: '언제든지 편하게 문의해 주세요',
+    res_time: '접수 시간　5:00 — 20:00',
+    res_sns: 'WhatsApp &amp; LINE',
+    footer: '© 2026 MAHALO TAXI　All rights reserved.'
+  },
+  ar: {
+    catch: 'نسوق بامتنان',
+    sub: 'نحمل شكركم معنا',
+    about_label: 'من نحن',
+    about_text: 'خدمة نقل راقية مقدمة بضيافة صادقة.',
+    service_label: 'خدماتنا',
+    svc1_title: 'التوصيل للمطار',
+    svc1_text: 'مطار كانساي الدولي<br>مطار إيتامي<br>أسعار الفنادق متاحة',
+    svc2_title: 'جولات سياحية',
+    svc2_text: 'أوساكا · كيوتو · كوبي<br>مسارات مخصصة<br>نصف يوم أو يوم كامل',
+    svc3_title: 'خدمة الاستقبال',
+    svc3_text: 'نقل الفنادق والمحطات<br>للشركات والأفراد<br>الحجز المسبق مفضل',
+    global_label: 'خدمة دولية',
+    global_title: 'نرحب بضيوفنا<br>من جميع أنحاء العالم',
+    global_text: 'نتلقى طلبات كثيرة من الفنادق<br>ولدينا خبرة واسعة في خدمة الضيوف الدوليين.<br><br>نستخدم WhatsApp وتطبيقات الترجمة<br>لتقديم خدمة متعددة اللغات.',
+    vehicle_label: 'السيارة',
+    veh_name: 'ALPHARD',
+    veh_grade: 'إكزيكيوتف لاونج · موديل 2026',
+    veh_text: 'أرقى طراز من السيارات.<br>مقصورة هادئة ومقاعد فاخرة<br>تجعل كل رحلة تجربة استثنائية.',
+    res_label: 'الحجز',
+    res_note: 'لا تتردد في التواصل معنا',
+    res_time: 'ساعات العمل　5:00 — 20:00',
+    res_sns: 'WhatsApp &amp; LINE',
+    footer: '© 2026 MAHALO TAXI　جميع الحقوق محفوظة.'
+  }
+};
+
+function setLang(lang) {
+  const t = translations[lang];
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector('.lang-btn[data-lang="'+lang+'"]').classList.add('active');
+  
+  const el = id => document.getElementById(id);
+  if(el('catch-main')) el('catch-main').innerHTML = t.catch;
+  if(el('catch-sub')) el('catch-sub').innerHTML = t.sub;
+  if(el('about-label')) el('about-label').innerHTML = t.about_label;
+  if(el('about-text')) el('about-text').innerHTML = t.about_text;
+  if(el('service-label')) el('service-label').innerHTML = t.service_label;
+  if(el('svc1-title')) el('svc1-title').innerHTML = t.svc1_title;
+  if(el('svc1-text')) el('svc1-text').innerHTML = t.svc1_text;
+  if(el('svc2-title')) el('svc2-title').innerHTML = t.svc2_title;
+  if(el('svc2-text')) el('svc2-text').innerHTML = t.svc2_text;
+  if(el('svc3-title')) el('svc3-title').innerHTML = t.svc3_title;
+  if(el('svc3-text')) el('svc3-text').innerHTML = t.svc3_text;
+  if(el('global-label')) el('global-label').innerHTML = t.global_label;
+  if(el('global-title')) el('global-title').innerHTML = t.global_title;
+  if(el('global-text')) el('global-text').innerHTML = t.global_text;
+  if(el('vehicle-label')) el('vehicle-label').innerHTML = t.vehicle_label;
+  if(el('veh-grade')) el('veh-grade').innerHTML = t.veh_grade;
+  if(el('veh-text')) el('veh-text').innerHTML = t.veh_text;
+  if(el('res-label')) el('res-label').innerHTML = t.res_label;
+  if(el('res-note')) el('res-note').innerHTML = t.res_note;
+  if(el('res-time')) el('res-time').innerHTML = t.res_time;
+  if(el('footer-copy')) el('footer-copy').innerHTML = t.footer;
+  
+  // アラビア語はRTL
+  document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+}
+</script>
+
+</body>
+</html>
